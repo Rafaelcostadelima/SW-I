@@ -10,12 +10,15 @@
         // echo "Vamos para a página restrita...";
         $nome = "Rafael";
         header('Location: restrita.php?nome='.$nome);
+        exit;
+
     } else {
         // Volte para o formulário
         // echo "Volte para o formulário";
-        header('Location: formulario.php');
+        echo "<script>
+                alert('Email ou senha incorretos...')
+                window.location.href = 'formulario.php';
+             </script>";
+        exit;
     }
-
-
-
 ?>
