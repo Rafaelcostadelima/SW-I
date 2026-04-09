@@ -17,26 +17,26 @@
     <div class="container mt-5">
         <p class="fs-1 fw-bolder text-secondary-emphasis text-center">LOGIN</p>
     </div>
-    <div class="container p-3 mt-2 d-flex justify-content-center">
-        <div class="card mb-3" style="width: 50rem; border-radius: 20px;">
+    <div class="container p-3 mt-2 d-flex justify-content-center ">
+        <div class="card mb-3" style="width: 45em; border-radius: 20px;">
             <div class="card-body">
                 <form action="processa.php" method="POST">
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <label for="exampleInputPassword1" class="form-label">Username</label>
                         <input type="text" class="form-control" id="exampleInputPassword1" name="username">
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             name="email">
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <label for="exampleInputPassword1" class="form-label">Senha</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" name="senha">
                     </div>
-                    <div class="text-center">
+                    <div class="text-center mt-4 mb-1">
                         <input type="submit" value="Enviar" class="btn btn-primary">
                     </div>
 

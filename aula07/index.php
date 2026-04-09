@@ -32,7 +32,12 @@
         .nav-link.disabled,
         .disabled {
             cursor: not-allowed !important;
+            user-select: none;
             pointer-events: auto !important;
+        }
+
+        #referencias li a:hover{
+            cursor: not-allowed !important;
         }
     </style>
 </head>
@@ -62,7 +67,7 @@
     <header class="position-relative d-flex align-items-center justify-content-center"
         style="height: 80vh; overflow: hidden;">
         <img src="img/banner.png" class="position-absolute w-100 h-100"
-            style="object-fit: cover; filter: brightness(0.4);" alt="Banner">
+            style="object-fit: cover; filter: brightness(1);" alt="Banner">
         <div class="container position-relative text-center text-white">
             <h1 class="display-1 fw-bold mb-3">
                 Faça login para desbloquear o conteúdo do site
@@ -214,15 +219,14 @@
                     </div>
                     <div class="col-md-6 text-md-end">
                         <h5 class="mb-3">Referências Bibliográficas</h5>
-                        <ul class="list-unstyled small text-secondary">
-                            <li>PHP.NET - <a href="https://php.net" target="_blank"
-                                    class="text-decoration-none text-secondary">Manual
+                        <ul id="referencias" class="list-unstyled small text-secondary">
+                            <li>PHP.NET - <a class="text-decoration-none text-secondary">Manual
                                     Oficial</a></li>
-                            <li>Zend - <a href="https://www.zend.com/blog/php-7" target="_blank"
+                            <li>Zend - <a 
                                     class="text-decoration-none text-secondary">Evolução da Linguagem</a>
                             </li>
-                            <li>W3Techs - <a href="https://w3techs.com/technologies/history_details/pl-php"
-                                    target="_blank" class="text-decoration-none text-secondary">Estatísticas Web</a>
+                            <li>W3Techs - <a
+                                    class="text-decoration-none text-secondary">Estatísticas Web</a>
                             </li>
                         </ul>
                     </div>

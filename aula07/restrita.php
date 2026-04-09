@@ -50,6 +50,8 @@ $username = $_GET["username"];
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#historia">Sobre</a>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="#evolucao">Evolução</a>
+                    </li>
                     <li class="nav-item"><a class="btn btn-outline-primary ms-lg-3" href="login.php">Login</a></li>
                 </ul>
             </div>
@@ -60,7 +62,7 @@ $username = $_GET["username"];
     <header class="position-relative d-flex align-items-center justify-content-center"
         style="height: 80vh; overflow: hidden;">
         <img src="img/banner.png" class="position-absolute w-100 h-100"
-            style="object-fit: cover; filter: brightness(0.4);" alt="Banner">
+            style="object-fit: cover; filter: brightness(1);" alt="Banner">
         <div class="container position-relative text-center text-white">
             <h1 class="display-1 fw-bold mb-3">
                 Seja bem-vindo,
@@ -224,6 +226,17 @@ $username = $_GET["username"];
         </div>
     </footer>
 
+    <script>
+        const currentUrl = window.location.href;
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            if (link.href === currentUrl) {
+                link.classList.add('active');
+                link.setAttribute('aria-current', 'page');
+            }
+        });
+    </script>
 </body>
 
 </html>
