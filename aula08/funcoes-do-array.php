@@ -1,0 +1,2 @@
+<?php
+    echo "Algumas funções importantes para array: <br><strong>count()</strong> : conta a quantidade de elementos de um array. <br><strong>array_push()</strong> : adiciona um ou mais elementos no final. <br><strong>array_pop()</strong> : remove o último elemento. <br><strong>array_shift()</strong> : Remove o primeiro elemento. <br><strong>array_unshift()</strong> : adiciona um ou mais elementos no começo. <br><strong>sort()</strong> : ordena o array. <br><strong>array_slice()</strong> : extrai uma parte do array.";
